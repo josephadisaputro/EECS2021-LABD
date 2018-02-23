@@ -1,0 +1,17 @@
+	.text
+main:
+
+	addi	$t0, $0, 4	#even number, this time i use 4 as example
+	addi	$t1, $0, 3	#odd number, this time i use 3 as example
+
+	sll	$a0, $t0, 2
+	addi	$v0, $0, 1
+	syscall
+
+	srl	$a0, $t0, 2
+	addi	$v0, $0, 1
+	syscall
+
+	jr	$ra
+
+
